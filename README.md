@@ -1,59 +1,80 @@
-# ResponsiveCustomerDashboard
+# ✨ Customer Dashboard — Angular Material (v19+) ✨
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
+An elegant and modern dashboard application built with Angular 19+, Angular Material, and standalone components. Includes responsive design and a dynamic dark/light mode theme switcher.
 
-## Development server
+## 🎯 Features
 
-To start a local development server, run:
+✅ Angular 19+ with Standalone Components
 
+🎨 Angular Material with Theme Customisation (Dark & Light)
+
+🧩 Responsive Dashboard Layout (Sidenav + Toolbar + Cards)
+
+📊 Placeholder Widgets (User Stats, Activity, Sales)
+
+⚡ LocalStorage for Theme Preference
+
+🚀 Clean Project Structure with Modern Angular Practices
+
+## 🖼️ Screenshots
+Not Available 
+
+## 🛠️ Technologies Used
+
+Angular 19+
+
+Angular Material
+
+RxJS
+
+TypeScript
+
+SCSS
+
+Standalone Components
+
+## 📦 Installation
+### 1. Clone the repo:
+```bash
+git clone https://github.com/your-username/customer-dashboard.git
+cd customer-dashboard
+```
+### 2. Install dependencies:
+```bash
+npm install
+```
+### 3. Run the development server
 ```bash
 ng serve
 ```
+Navigate to http://localhost:4200 in your browser.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### 🌗 Theme Switching
+Toggle between light and dark themes using the switch in the header.
+Preference is saved to localStorage and persisted across sessions.
 
-## Code scaffolding
+### 📁 Project Structure
+src/app/components/ #Standalone UI components (dashboard, cards, toggles)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+src/app/services/ #Theme Service
 
-```bash
-ng generate component component-name
-```
+src/app/app.config.ts #Application configuration
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+src/app/app.components.ts #Root component
 
-```bash
-ng generate --help
-```
+### 🧠 Key Concepts
+Standalone Component Architecture
+Angular Material Theming API
+Responsive Layout with Flexbox/Grid
+LocalStorage Integration for Settings
 
-## Building
+### 📌 To-Do
+Add user authentication
+Integrate a real API for widgets
+Add charts using ngx-charts or Chart.js
+Mobile-first UI enhancements
 
-To build the project run:
+### 🙌 Contributing
+Contributions are welcome! Feel free to fork this repo and submit a pull request.
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+# Made with ❤️ using Angular Material
