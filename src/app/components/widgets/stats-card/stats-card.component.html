@@ -1,0 +1,10 @@
+<div class="stats-container">
+    <div class="icon-container">
+      <mat-icon>{{icon}}</mat-icon>
+    </div>
+    <div class="value">{{formattedValue}}</div>
+    <div class="change" [ngClass]="changeColor">
+      <mat-icon>{{changeIcon}}</mat-icon>
+      {{change >= 0 ? '+' : ''}}{{change}}%
+    </div>
+  </div>

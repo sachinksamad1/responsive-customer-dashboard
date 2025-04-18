@@ -1,0 +1,15 @@
+<mat-list>
+    @for (activity of activities; track activity.id) {
+      <mat-list-item>
+        <div matListItemAvatar class="avatar">{{activity.avatar}}</div>
+        <div matListItemTitle>{{activity.user}}</div>
+        <div matListItemLine>{{activity.action}}</div>
+        <div matListItemMeta>
+          <span class="time">{{activity.time}}</span>
+        </div>
+      </mat-list-item>
+      @if (!$last) {
+        <mat-divider></mat-divider>
+      }
+    }
+  </mat-list>

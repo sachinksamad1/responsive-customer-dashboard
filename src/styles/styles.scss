@@ -1,0 +1,13 @@
+@use '@angular/material' as mat;
+@use './styles/themes' as themes;
+
+@include mat.core();
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+// Include theme styles
+@include themes.light-theme;

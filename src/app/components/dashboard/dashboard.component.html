@@ -1,0 +1,23 @@
+<div class="dashboard-container">
+    <mat-grid-list cols="4" rowHeight="200px" gutterSize="16px">
+      @for (card of cards; track card.title) {
+        <mat-grid-tile [colspan]="card.cols" [rowspan]="card.rows">
+          <mat-card class="dashboard-card">
+            <mat-card-header>
+              <mat-card-title>{{card.title}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              @switch (card.title) {
+                @case ('Total Customers') { <app-stats-card [value]="1242" [change]="12.5" icon="people"></app-stats-card> }
+                @case ('Revenue') { <app-stats-card [value]="48231" [change]="-2.3" icon="attach_money" [isCurrency]="true"></app-stats-card> }
+                @case ('Conversion Rate') { <app-stats-card [value]="3.2" [change]="0.8" icon="trending_up" [isPercentage]="true"></app-stats-card> }
+                @case ('Active Users') { <app-stats-card [value]="423" [change]="5.1" icon="person"></app-stats-card> }
+                @case ('Recent Activity') { <app-activity-list></app-activity-list> }
+                @case ('Sales Overview') { <app-sales-chart></app-sales-chart> }
+              }
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+      }
+    </mat-grid-list>
+  </div>
